@@ -1,0 +1,7 @@
+[
+    {
+      "icon": "stats-chart-outline",
+      "name": "Estadisticas Generales",
+      "redirecTo": "/estadisticas-generales"
+    }
+  ]
