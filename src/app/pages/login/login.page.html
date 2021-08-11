@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="football" slot="end"></ion-icon>
+    <ion-icon name="football" slot="start"></ion-icon>
+    <ion-title>Bienvenido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img class="ion-padding" src="https://th.bing.com/th/id/R.c83ac3a8c0544bc0e4772496ca6b4d15?rik=y%2ffFTQErF%2bb4Qg&pid=ImgRaw&r=0"></ion-img>
+  <ion-card>
+    <ion-input class="ion-padding" type="text" placeholder="Nombre de usuario"></ion-input>
+    <ion-input class="ion-padding" type="password" placeholder="Contraseña"></ion-input>
+  </ion-card>
+
+  <ion-card color="success" >
+    <ion-button routerLink="/inicio" expand="block" fill="clear" shape="round" style="color: white;">
+      Acceder
+    </ion-button>
+ </ion-card>
+
+ <p style="text-align: center;">¿No tienes cuenta? registrate gratis !</p>
+ <ion-card color="warning" >
+  <ion-button routerLink="/registro" expand="block" fill="clear" shape="round" style="color: white;">
+    Crear una cuenta
+  </ion-button>
+</ion-card>
+</ion-content>
