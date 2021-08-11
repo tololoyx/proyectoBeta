@@ -1,0 +1,12 @@
+[
+    {
+      "icon": "stats-chart-outline",
+      "name": "Estadisticas Generales",
+      "redirecTo": "/estadisticas-generales"
+    },
+    {
+      "icon": "aperture-sharp",
+      "name": "Proximos Partidos",
+      "redirecTo": "/proxpartidos"
+    }
+  ]

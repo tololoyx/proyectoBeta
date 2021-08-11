@@ -1,0 +1,114 @@
+<app-header title="Estadisticas generales">
+
+</app-header>
+<!--*ngFor="let c of [1,1,1,1,1,1,1,1,1,1]; let i=index"-->
+<ion-content padding>
+  <ion-grid fixed>
+    <!--POS &nbsp;&nbsp;&nbsp;&nbsp; CLB  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; PJ &nbsp; PG &nbsp;PE &nbsp; 
+    PP&nbsp; GF&nbsp;GC&nbsp;DG &nbsp;PTS&nbsp;-->
+    <ion-row>
+      <ion-col size="1.5" size-lg="2" size-md="2" size-sm="1.5">
+        Pos
+      </ion-col>
+      <ion-col size="2" size-lg="2" size-md="2" size-sm="2">
+        Clb
+      </ion-col>
+      <ion-col size="1" size-lg=".5" size-md="1" size-sm="1">
+        Pj
+      </ion-col>
+      <ion-col size="1" size-lg=".5" size-md="1" size-sm="1">
+        Pg
+      </ion-col>
+      <ion-col size="1" size-lg=".5" size-md="1" size-sm="1">
+        Pe
+      </ion-col>
+      <ion-col size="1" size-lg=".5" size-md="1" size-sm="1">
+        Pp
+      </ion-col>
+      <ion-col size="1" size-lg=".5" size-md="1" size-sm="1">
+        Gf
+      </ion-col>
+      <ion-col size="1" size-lg=".5" size-md="1" size-sm="1"> 
+        Gc
+      </ion-col>
+      <ion-col size="1" size-lg=".5" size-md="1" size-sm="1">
+        Dg
+      </ion-col>
+      <ion-col size="1.5" size-lg="3" size-md="1" size-sm="1.5">
+        Pts
+      </ion-col>
+    </ion-row>
+    <ion-row  ion-item *ngFor="let item of lista">
+      <ion-col size="1" size-lg="1" size-md="1" size-sm="1">
+        {{item.posicion}}
+      </ion-col>
+      <ion-col size="2.5" size-lg="3" size-md="3" size-sm="2.5">
+        <center>
+          {{item.club}}
+        </center>
+      </ion-col>
+      <ion-col size="1" size-lg="1" size-md="1" size-sm="1">
+        {{item.partidosJugados}}
+      </ion-col>
+      <ion-col size="1" size-lg="1" size-md="1" size-sm="1">
+        {{item.partidosGanados}}
+      </ion-col>
+      <ion-col size="1" size-lg="1" size-md="1" size-sm="1">
+        {{item.partidosEmpatados}}
+      </ion-col>
+      <ion-col size="1" size-lg="1" size-md="1" size-sm="1">
+        {{item.partidosPerdidos}}
+      </ion-col>
+      <ion-col size="1" size-lg="1" size-md="1" size-sm="1">
+        {{item.golesAfavor}}
+      </ion-col>
+      <ion-col size="1" size-lg="1" size-md="1" size-sm="1">
+        {{item.golesEncontra}}
+      </ion-col>
+      <ion-col size="1" size-lg="1" size-md="1" size-sm="1">
+        {{item.diferenciaDegoles}}
+      </ion-col>
+      <ion-col size="1.5" size-lg="1" size-md="1" size-sm="1">
+        {{item.puntos}}
+      </ion-col>
+      <!--
+        <ion-col >
+        {{item.posicion}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{item.club}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{item.partidosJugados}}&nbsp;{{item.partidosGanados}}&nbsp;{{item.partidosEmpatados}}&nbsp; 
+        {{item.partidosPerdidos}}&nbsp;{{item.golesAfavor}}&nbsp;{{item.golesEncontra}}&nbsp;{{item.diferenciaDegoles}}&nbsp;{{item.puntos}} 
+      </ion-col>
+      -->
+      <!-- 
+      <ion-col size="1.2">
+        <p>POS</p>
+      </ion-col>
+      <ion-col size="1.2">
+        <p>CLB</p>
+      </ion-col>
+      <ion-col size="1.2">
+        <p>PJ</p>
+      </ion-col>
+      <ion-col size="1.2">
+        <p>PG</p>
+      </ion-col>
+      <ion-col size="1.2">
+        <p>PE</p>
+      </ion-col>
+      <ion-col size="1.2">
+        <p>PP</p>
+      </ion-col>
+      <ion-col size="1.2">
+        <p>GF</p>
+      </ion-col>
+      <ion-col size="1.2">
+        <p>GC</p>
+      </ion-col>
+      <ion-col size="1.2">
+        <p>DG</p>
+      </ion-col>
+      <ion-col size="1.2">
+        <p>PTS</p>
+      </ion-col>
+      -->
+    </ion-row>
+  </ion-grid>
+</ion-content>
